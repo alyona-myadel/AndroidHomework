@@ -4,27 +4,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="by.myadel.homework.MainActivity">
+    tools:context="by.myadel.homework.hw1.MainActivity">
 
     <TextView
         android:id="@+id/first_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="50dp"
         android:layout_weight="1"
+        android:background="@color/colorBlue2"
+        android:gravity="center"
         android:text="@string/first_text" />
 
     <TextView
         android:id="@+id/second_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="50dp"
         android:layout_weight="1"
+        android:background="@color/colorBlue2"
+        android:gravity="center"
         android:text="@string/second_text" />
 
     <Button
         android:id="@+id/swap_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0"
         android:text="@string/swap_button_text" />
-
 </LinearLayout>

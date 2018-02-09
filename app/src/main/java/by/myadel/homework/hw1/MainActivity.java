@@ -1,10 +1,12 @@
-package by.myadel.homework;
+package by.myadel.homework.hw1;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import by.myadel.homework.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView firstTextView;
@@ -13,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_hw1);
         firstTextView = findViewById(R.id.first_text_view);
         secondTextView = findViewById(R.id.second_text_view);
         Button swapButton = findViewById(R.id.swap_button);
