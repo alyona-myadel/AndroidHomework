@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="by.myadel.homework.hw1.MainActivity">
+    tools:context="by.myadel.homework.hw1.MainActivity1">
 
     <TextView
         android:id="@+id/first_text_view"

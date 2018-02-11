@@ -3,4 +3,13 @@
     <string name="first_text">First</string>
     <string name="second_text">Second</string>
     <string name="swap_button_text">Swap</string>
+    <string name="go_hw1_button">Homework1</string>
+    <string name="go_hw2_button">Homework2</string>
+    <string name="austria">Austria</string>
+    <string name="poland">Poland</string>
+    <string name="italy">Italy</string>
+    <string name="colombia">Colombia</string>
+    <string name="madagascar">Madagascar</string>
+    <string name="thailand">Thailand</string>
+    <string name="denmark">Denmark</string>
 </resources>

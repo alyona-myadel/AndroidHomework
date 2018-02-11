@@ -5,4 +5,17 @@
     <color name="colorBlue1">#5C6BC0</color>
     <color name="colorBlue2">#9FA8DA</color>
     <color name="colorAccent">#7986CB</color>
+    <color name="colorRedAustria">#DC1E04</color>
+    <color name="colorRedPoland">#EC160C</color>
+    <color name="colorRedItaly">#D4222C</color>
+    <color name="colorGreenItaly">#048E44</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorYellowColombia">#FCD214</color>
+    <color name="colorBlueColombia">#043A94</color>
+    <color name="colorRedColombia">#CC1224</color>
+    <color name="colorRedMadagascar">#FC3E34</color>
+    <color name="colorGreenMadagascar">#047E3C</color>
+    <color name="colorRedThailand">#CC1224</color>
+    <color name="colorBlueThailand">#04029C</color>
+    <color name="colorRedDenmark">#D40E34</color>
 </resources>

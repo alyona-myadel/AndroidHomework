@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import by.myadel.homework.R;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity1 extends AppCompatActivity implements View.OnClickListener {
     private TextView firstTextView;
     private TextView secondTextView;
 
