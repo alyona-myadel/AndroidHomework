@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import by.myadel.homework.BuildConfig;
 import by.myadel.homework.R;
 
 public class MainActivity1 extends AppCompatActivity implements View.OnClickListener {
@@ -18,6 +19,7 @@ public class MainActivity1 extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_main_hw1);
         firstTextView = findViewById(R.id.first_text_view);
         secondTextView = findViewById(R.id.second_text_view);
+        firstTextView.setText(BuildConfig.INFOPMATION);
         Button swapButton = findViewById(R.id.swap_button);
         swapButton.setOnClickListener(new View.OnClickListener() {
             @Override

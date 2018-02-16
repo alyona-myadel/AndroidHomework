@@ -9,6 +9,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "INFOPMATION", "\"added string in builgConfig\""
+        resValue "string", "BUILD_TIME", "\"Build time: ${System.currentTimeSeconds()}\""
     }
     buildTypes {
         release {
@@ -25,4 +27,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.facebook.fresco:fresco:1.8.1'
+    implementation 'com.facebook.fresco:animated-gif:1.8.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 }

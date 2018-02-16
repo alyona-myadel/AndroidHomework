@@ -24,7 +24,7 @@
         android:layout_weight="1"
         android:background="@color/colorBlue2"
         android:gravity="center"
-        android:text="@string/second_text" />
+        android:text="@string/BUILD_TIME" />
 
     <Button
         android:id="@+id/swap_button"

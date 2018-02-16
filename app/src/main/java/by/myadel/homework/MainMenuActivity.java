@@ -9,10 +9,12 @@ import android.widget.Button;
 
 import by.myadel.homework.hw1.MainActivity1;
 import by.myadel.homework.hw2.MainActivity2;
+import by.myadel.homework.hw3.MainActivity3;
 
 public class MainMenuActivity extends AppCompatActivity {
     private Button buttonHomework1;
     private Button buttonHomework2;
+    private Button buttonHomework3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,13 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity2.class));
+            }
+        });
+        buttonHomework3 = findViewById(R.id.three_button);
+        buttonHomework3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenuActivity.this, MainActivity3.class));
             }
         });
     }
