@@ -6,6 +6,7 @@
     <string name="go_hw1_button">Homework1</string>
     <string name="go_hw2_button">Homework2</string>
     <string name="go_hw3_button">Homework3</string>
+    <string name="go_hw4_1_button">Homework4_1</string>
     <string name="austria">Austria</string>
     <string name="poland">Poland</string>
     <string name="italy">Italy</string>
@@ -17,4 +18,7 @@
     <string name="hw3_default_url">https://assets-cdn.github.com/images/modules/logos_page/Octocat.png</string>
     <string name="hw3_default_url1">https://media.alienwarearena.com/media/1327-a.jpg</string>
     <string name="hw3_edit_text_hint">https://...</string>
+    <string name="hw4_text_view_activity_one">Activity one</string>
+    <string name="hw4_text_view_activity_two">activity two</string>
+    <string name="hw4_button_go_over">Go over</string>
 </resources>

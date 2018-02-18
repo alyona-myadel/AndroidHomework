@@ -27,9 +27,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            fresco:actualImageUri="@string/hw3_default_url"
+            fresco:actualImageUri="@string/hw3_default_url1"
             fresco:placeholderImage="@drawable/my_drawable"
-            fresco:viewAspectRatio="1" />
+            fresco:viewAspectRatio="1"
+            fresco:roundAsCircle="true"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:roundedCornerRadius="10dp" />
 
         <Button
             android:id="@+id/hw3_download_button"
