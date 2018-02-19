@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/hw4_3_image_view"
+        android:src="@drawable/blinking_owl_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/hw4_3_button_blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hw4_3_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

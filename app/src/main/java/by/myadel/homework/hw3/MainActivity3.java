@@ -24,7 +24,7 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fresco.initialize(this);
-        setContentView(R.layout.activity_main_hw3);
+        setContentView(R.layout.hw3_activity_main);
         editText = findViewById(R.id.hw3_image_url_edit_text);
         button = findViewById(R.id.hw3_download_button);
         button.setOnClickListener(new View.OnClickListener() {

@@ -23,7 +23,7 @@ public class Activity4_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hw4_2);
+        setContentView(R.layout.hw4_2_activity);
         imageView1 = findViewById(R.id.hw4_2_image_view);
         Glide.with(this).load(myUrl).into(imageView1);
         anim = AnimationUtils.loadAnimation(Activity4_1.this, R.anim.scale_animation);

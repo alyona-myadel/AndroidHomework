@@ -16,7 +16,7 @@ public class MainActivity1 extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_hw1);
+        setContentView(R.layout.hw1_activity_main);
         firstTextView = findViewById(R.id.first_text_view);
         secondTextView = findViewById(R.id.second_text_view);
         firstTextView.setText(BuildConfig.INFOPMATION);

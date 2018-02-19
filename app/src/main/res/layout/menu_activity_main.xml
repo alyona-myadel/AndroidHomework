@@ -33,5 +33,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/go_hw4_1_button" />
+        <Button
+            android:id="@+id/five_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/five_button" />
     </LinearLayout>
 </ScrollView>

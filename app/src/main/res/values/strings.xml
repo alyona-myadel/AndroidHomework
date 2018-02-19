@@ -21,4 +21,6 @@
     <string name="hw4_text_view_activity_one">Activity one</string>
     <string name="hw4_text_view_activity_two">activity two</string>
     <string name="hw4_button_go_over">Go over</string>
+    <string name="five_button">Homework4_2</string>
+    <string name="hw4_3_button">blink</string>
 </resources>
