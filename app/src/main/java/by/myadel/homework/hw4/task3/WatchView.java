@@ -2,7 +2,9 @@ package by.myadel.homework.hw4.task3;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -14,12 +16,12 @@ import java.util.Calendar;
 
 public class WatchView extends View {
     private int height, width = 0;
-    private int circleWidth = 25;
+    private int padding = 25;
     private int[] numbers = {3, 6, 9, 12};
     private Paint paint;
     private int radius;
-    int notchWidth = 1;
-
+    int notchWidth = 3;
+    float rectFBottomMin;
 
     public WatchView(Context context) {
         super(context);
@@ -48,26 +50,18 @@ public class WatchView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         initWatch();
-        drawCircle(canvas);
+        drawNumeral(canvas);
+        drawNumeral(canvas);
         drawNotches(canvas);
         drawHands(canvas);
         invalidate();
     }
 
-    private void drawCircle(Canvas canvas) {
-        paint.reset();
-        paint.setColor(getResources().getColor(android.R.color.black));
-        paint.setStrokeWidth(circleWidth);
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setAntiAlias(true);
-        canvas.drawCircle(width / 2, height / 2, radius - circleWidth, paint);
-    }
-
     private void drawNotches(Canvas canvas) {
         float rectFLeft = radius - (float) notchWidth / 2;
         float rectFRight = radius + (float) notchWidth / 2;
-        float rectFTop = circleWidth * 1.5f;
-        float rectFBottomMin = radius / 12;
+        float rectFTop = padding * 1.5f;
+        rectFBottomMin = radius / 9;
         float rectFBottomMax = radius / 6;
         RectF rectFMin = new RectF(rectFLeft, rectFTop, rectFRight, rectFBottomMin);
         RectF rectFMax = new RectF(rectFLeft, rectFTop, rectFRight, rectFBottomMax);
@@ -80,7 +74,6 @@ public class WatchView extends View {
             }
         }
     }
-
 
     private void drawHands(Canvas canvas) {
         Calendar c = Calendar.getInstance();
@@ -100,4 +93,20 @@ public class WatchView extends View {
                 paint);
     }
 
+    private void drawNumeral(Canvas canvas) {
+        paint.reset();
+        paint.setStyle(Paint.Style.FILL);
+        canvas.drawPaint(paint);
+        paint.setColor(Color.WHITE);
+        paint.setTextSize(50);
+        Rect rect = new Rect();
+        for (int number : numbers) {
+            String tmp = String.valueOf(number);
+            paint.getTextBounds(tmp, 0, tmp.length(), rect);
+            double angle = Math.PI / 6 * (number - 3);
+            int x = (int) (width / 2 + Math.cos(angle) * (radius - 2 * padding - rect.height()) - rect.width() / 2);
+            int y = (int) (height / 2 + Math.sin(angle) * (radius - 2 * padding - rect.height()) + rect.height() / 2);
+            canvas.drawText(tmp, x, y, paint);
+        }
+    }
 }
