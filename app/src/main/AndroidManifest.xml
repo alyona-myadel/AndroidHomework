@@ -36,6 +36,9 @@
             android:parentActivityName=".hw4.task1.MainActivity4" />
         <activity android:name=".hw4.task2.MainActivity4_3"
             android:parentActivityName=".MainMenuActivity"/>
+        <activity
+            android:name=".hw4.task3.MainActivity4_4"
+            android:parentActivityName=".MainMenuActivity" />
     </application>
 
 </manifest>

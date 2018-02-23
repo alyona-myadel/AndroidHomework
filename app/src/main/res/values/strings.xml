@@ -7,6 +7,8 @@
     <string name="go_hw2_button">Homework2</string>
     <string name="go_hw3_button">Homework3</string>
     <string name="go_hw4_1_button">Homework4_1</string>
+    <string name="five_button">Homework4_2</string>
+    <string name="six_button">Homework4_3</string>
     <string name="austria">Austria</string>
     <string name="poland">Poland</string>
     <string name="italy">Italy</string>
@@ -21,6 +23,5 @@
     <string name="hw4_text_view_activity_one">Activity one</string>
     <string name="hw4_text_view_activity_two">activity two</string>
     <string name="hw4_button_go_over">Go over</string>
-    <string name="five_button">Homework4_2</string>
     <string name="hw4_3_button">blink</string>
 </resources>
