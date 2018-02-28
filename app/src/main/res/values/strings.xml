@@ -19,9 +19,11 @@
     <string name="hw3_1_name_button">download</string>
     <string name="hw3_default_url">https://assets-cdn.github.com/images/modules/logos_page/Octocat.png</string>
     <string name="hw3_default_url1">https://media.alienwarearena.com/media/1327-a.jpg</string>
-    <string name="hw3_edit_text_hint">https://...</string>
+    <string name="hw3_edit_text_hint">https://…</string>
     <string name="hw4_text_view_activity_one">Activity one</string>
     <string name="hw4_text_view_activity_two">activity two</string>
     <string name="hw4_button_go_over">Go over</string>
     <string name="hw4_3_button">blink</string>
+    <string name="seven_button">Homework5_1</string>
+    <string name="changeStatusWifi">wi-fi</string>
 </resources>

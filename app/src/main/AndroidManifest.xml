@@ -2,8 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="by.myadel.homework">
 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -39,6 +42,14 @@
         <activity
             android:name=".hw4.task3.MainActivity4_4"
             android:parentActivityName=".MainMenuActivity" />
+        <activity
+            android:name=".hw5.MainActivityHomework5_1"
+            android:parentActivityName=".MainMenuActivity" />
+
+        <service
+            android:name=".hw5.MyServiceForWifi"
+            android:enabled="true"
+            android:exported="false" />
     </application>
 
 </manifest>

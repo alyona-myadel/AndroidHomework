@@ -13,6 +13,7 @@ import by.myadel.homework.hw3.MainActivity3;
 import by.myadel.homework.hw4.task1.MainActivity4;
 import by.myadel.homework.hw4.task2.MainActivity4_3;
 import by.myadel.homework.hw4.task3.MainActivity4_4;
+import by.myadel.homework.hw5.MainActivityHomework5_1;
 
 public class MainMenuActivity extends AppCompatActivity {
     private Button buttonHomework1;
@@ -21,6 +22,7 @@ public class MainMenuActivity extends AppCompatActivity {
     private Button buttonHomework4_1;
     private Button buttonHomework4_2;
     private Button buttonHomework4_3;
+    private Button buttonHomework5_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +68,13 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity4_4.class));
+            }
+        });
+        buttonHomework5_1 = findViewById(R.id.seven_button);
+        buttonHomework5_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenuActivity.this, MainActivityHomework5_1.class));
             }
         });
     }
