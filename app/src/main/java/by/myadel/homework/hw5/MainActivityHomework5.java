@@ -20,7 +20,7 @@ import com.bumptech.glide.Glide;
 
 import by.myadel.homework.R;
 
-public class MainActivityHomework5_1 extends AppCompatActivity {
+public class MainActivityHomework5 extends AppCompatActivity {
     private ImageView imageView;
     private WifiManager manager;
     private boolean isBound = false;
@@ -30,7 +30,7 @@ public class MainActivityHomework5_1 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hw5_1_activity_main);
+        setContentView(R.layout.hw5_activity_main);
         imageView = findViewById(R.id.hw5_1_image_view_wifi);
         manager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
         registerReceiver(innerReceiver, new IntentFilter("android.net.wifi.WIFI_STATE_CHANGED"));
@@ -85,7 +85,7 @@ public class MainActivityHomework5_1 extends AppCompatActivity {
 
     private void changeImageToGray() {
         Glide
-                .with(MainActivityHomework5_1.this)
+                .with(MainActivityHomework5.this)
                 .load(R.drawable.ic_wifi_gray)
                 .into(imageView);
 
@@ -93,7 +93,7 @@ public class MainActivityHomework5_1 extends AppCompatActivity {
 
     private void changeImageToBlack() {
         Glide
-                .with(MainActivityHomework5_1.this)
+                .with(MainActivityHomework5.this)
                 .load(R.drawable.ic_wifi_black)
                 .into(imageView);
     }

@@ -37,19 +37,23 @@
         <activity
             android:name=".hw4.task1.Activity4_1"
             android:parentActivityName=".hw4.task1.MainActivity4" />
-        <activity android:name=".hw4.task2.MainActivity4_3"
-            android:parentActivityName=".MainMenuActivity"/>
+        <activity
+            android:name=".hw4.task2.MainActivity4_3"
+            android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".hw4.task3.MainActivity4_4"
             android:parentActivityName=".MainMenuActivity" />
         <activity
-            android:name=".hw5.MainActivityHomework5_1"
+            android:name=".hw5.MainActivityHomework5"
             android:parentActivityName=".MainMenuActivity" />
 
         <service
             android:name=".hw5.MyServiceForWifi"
             android:enabled="true"
             android:exported="false" />
+        <activity
+            android:name=".hw6.MainActivity6"
+            android:parentActivityName=".MainMenuActivity" />
     </application>
 
 </manifest>
