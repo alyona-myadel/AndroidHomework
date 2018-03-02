@@ -75,8 +75,11 @@ public class NewsStorage {
     }
 
     private boolean checkWordInText(String text, String word) {
-        Pattern p = Pattern.compile(".*" + word + ".*", CASE_INSENSITIVE);
-        Matcher m = p.matcher(text);
-        return m.matches();
+        if (text != null) {
+            Pattern p = Pattern.compile(".*" + word + ".*", CASE_INSENSITIVE);
+            Matcher m = p.matcher(text);
+            return m.matches();
+        }
+        return false;
     }
 }

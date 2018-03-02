@@ -1,11 +1,9 @@
 package by.myadel.homework.hw6;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.LinkedList;
@@ -15,12 +13,8 @@ import by.myadel.homework.R;
 import by.myadel.homework.hw6.news.data.News;
 
 
-public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private List<News> newsList = new LinkedList<>();
-
-    public List<News> getNewsList() {
-        return newsList;
-    }
 
     public void setNewsList(List<News> news) {
         this.newsList.clear();
@@ -32,7 +26,6 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
     }
 
-
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.hw6_fragment_news, parent, false);
@@ -43,8 +36,10 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         Holder myHolder = (Holder) holder;
         final News news = newsList.get(position);
-        myHolder.mNameTextView.setText(news.getDate());
-        myHolder.mSurnameTextView.setText(news.getTitle());
+        myHolder.id.setText(String.valueOf(news.getId()));
+        myHolder.title.setText(news.getTitle());
+        myHolder.description.setText(news.getDescription());
+        myHolder.date.setText(news.getDate());
     }
 
     @Override
@@ -53,15 +48,14 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     static class Holder extends RecyclerView.ViewHolder {
-        ImageView mImageView;
-        TextView mNameTextView, mSurnameTextView;
+        TextView id, title, description, date;
 
         public Holder(View itemView) {
             super(itemView);
-            Log.e("User Adapter", "Holder");
-            mImageView = itemView.findViewById(R.id.action_image);
-            mNameTextView = itemView.findViewById(R.id.textView1);
-            mSurnameTextView = itemView.findViewById(R.id.textView2);
+            id = itemView.findViewById(R.id.hw6_1_fragment_text_view);
+            title = itemView.findViewById(R.id.hw6_2_fragment_text_view);
+            description = itemView.findViewById(R.id.hw6_3_fragment_text_view);
+            date = itemView.findViewById(R.id.hw6_4_fragment_text_view);
         }
     }
 }

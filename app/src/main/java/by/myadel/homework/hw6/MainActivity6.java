@@ -4,7 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.Button;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.EditText;
 
 import java.util.List;
@@ -18,13 +19,11 @@ import by.myadel.homework.hw6.news.parsers.json.JsonParser;
 
 
 public class MainActivity6 extends AppCompatActivity {
-    NewsStorage newsStorage = new NewsStorage();
+    private NewsStorage newsStorage = new NewsStorage();
     private static final String LINK_JSON = "http://kiparo.ru/t/it_news.json";
-    UserAdapter userAdapter = new UserAdapter();
+    private NewsAdapter userAdapter = new NewsAdapter();
     private RecyclerView recyclerView;
-    private Button button;
     private EditText editText;
-    private String textKey;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +32,23 @@ public class MainActivity6 extends AppCompatActivity {
         start();
         print(newsStorage.getNewsList());
         editText = findViewById(R.id.hw6_edit_text);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                newsStorage.wordSearch(s.toString());
+                print(newsStorage.getNewsList());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
     }
 
     private void print(List<News> news) {

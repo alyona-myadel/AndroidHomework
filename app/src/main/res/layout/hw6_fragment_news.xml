@@ -2,24 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#a39d9d"
     android:layout_margin="10dp"
-    android:orientation="horizontal">
+    android:background="#c1c2ce"
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/action_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/hw6_1_fragment_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/hw6_2_fragment_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/hw6_3_fragment_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/hw6_4_fragment_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
