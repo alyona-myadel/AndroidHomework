@@ -54,6 +54,9 @@
         <activity
             android:name=".hw6.MainActivity6"
             android:parentActivityName=".MainMenuActivity" />
+        <activity
+            android:name=".hw7.MainActivity7"
+            android:parentActivityName=".MainMenuActivity" />
     </application>
 
 </manifest>

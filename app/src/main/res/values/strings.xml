@@ -29,4 +29,7 @@
     <string name="eight_button">Homework6</string>
     <string name="hw6_edit_text_hint">search</string>
     <string name="hw6_bottom_search">search</string>
+    <string name="hw7_first_fragment">First</string>
+    <string name="hw7_second_fragment">Second</string>
+    <string name="nine_button">Homework7</string>
 </resources>

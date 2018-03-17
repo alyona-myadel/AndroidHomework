@@ -15,75 +15,75 @@ import by.myadel.homework.hw4.task2.MainActivity4_3;
 import by.myadel.homework.hw4.task3.MainActivity4_4;
 import by.myadel.homework.hw5.MainActivityHomework5;
 import by.myadel.homework.hw6.MainActivity6;
+import by.myadel.homework.hw7.MainActivity7;
 
 public class MainMenuActivity extends AppCompatActivity {
-    private Button buttonHomework1;
-    private Button buttonHomework2;
-    private Button buttonHomework3;
-    private Button buttonHomework4_1;
-    private Button buttonHomework4_2;
-    private Button buttonHomework4_3;
-    private Button buttonHomework5;
-    private Button buttonHomework6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_activity_main);
-        buttonHomework1 = findViewById(R.id.one_button);
+        Button buttonHomework1 = findViewById(R.id.one_button);
         buttonHomework1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity1.class));
             }
         });
-        buttonHomework2 = findViewById(R.id.two_button);
+        Button buttonHomework2 = findViewById(R.id.two_button);
         buttonHomework2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity2.class));
             }
         });
-        buttonHomework3 = findViewById(R.id.three_button);
+        Button buttonHomework3 = findViewById(R.id.three_button);
         buttonHomework3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity3.class));
             }
         });
-        buttonHomework4_1 = findViewById(R.id.four_button);
+        Button buttonHomework4_1 = findViewById(R.id.four_button);
         buttonHomework4_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity4.class));
             }
         });
-        buttonHomework4_2 = findViewById(R.id.five_button);
+        Button buttonHomework4_2 = findViewById(R.id.five_button);
         buttonHomework4_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity4_3.class));
             }
         });
-        buttonHomework4_3 = findViewById(R.id.six_button);
+        Button buttonHomework4_3 = findViewById(R.id.six_button);
         buttonHomework4_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity4_4.class));
             }
         });
-        buttonHomework5 = findViewById(R.id.seven_button);
+        Button buttonHomework5 = findViewById(R.id.seven_button);
         buttonHomework5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivityHomework5.class));
             }
         });
-        buttonHomework6 = findViewById(R.id.eight_button);
+        Button buttonHomework6 = findViewById(R.id.eight_button);
         buttonHomework6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity6.class));
+            }
+        });
+        Button buttonHomework7 = findViewById(R.id.nine_button);
+        buttonHomework7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenuActivity.this, MainActivity7.class));
             }
         });
     }
