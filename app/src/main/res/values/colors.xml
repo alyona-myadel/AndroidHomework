@@ -20,5 +20,6 @@
     <color name="colorRedDenmark">#D40E34</color>
     <color name="colorBackgroundOne">#c967dc</color>
     <color name="colorBackgroundTwo">#3bc9c9</color>
+    <color name="colorWhite">#ffffff</color>
 
 </resources>

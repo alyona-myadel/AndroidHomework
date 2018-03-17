@@ -16,6 +16,7 @@ import by.myadel.homework.hw4.task3.MainActivity4_4;
 import by.myadel.homework.hw5.MainActivityHomework5;
 import by.myadel.homework.hw6.MainActivity6;
 import by.myadel.homework.hw7.MainActivity7;
+import by.myadel.homework.hw8.MainActivity8;
 
 public class MainMenuActivity extends AppCompatActivity {
 
@@ -84,6 +85,13 @@ public class MainMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenuActivity.this, MainActivity7.class));
+            }
+        });
+        Button buttonHomework8 = findViewById(R.id.ten_button);
+        buttonHomework8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenuActivity.this, MainActivity8.class));
             }
         });
     }

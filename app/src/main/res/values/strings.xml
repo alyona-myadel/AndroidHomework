@@ -32,4 +32,7 @@
     <string name="hw7_first_fragment">First</string>
     <string name="hw7_second_fragment">Second</string>
     <string name="nine_button">Homework7</string>
+    <string name="ten_button">Homework8</string>
+    <string name="hw8_fragment">start</string>
+    <string name="hw8_timer">TIMER</string>
 </resources>
